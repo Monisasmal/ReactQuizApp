@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+.app{
+    height: 100vh;
+    background-color: #020230;
+    color: #fff;
+    display: flex;
+}
+.main{
+    width: 75%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #020230), url("./Asset/bg.jpg") center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", serif;
+}
+.money{
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.top{
+   height: 50%;
+   position: relative;
+}
+.timer{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    font-style: 700;
+    position: absolute;
+    bottom: -1rem;
+    left: 12%;
+}
+.bottom{
+height: 50%;
+}
+.quiz{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    width: 70%;
+    background: linear-gradient(#100241, black);
+    border: 1px solid wheat;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.answers{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.answer{
+    width: 30%;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#0c0133, rgb(19, 18, 18));
+    align-items: center;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px  10px 10px 10px;
+    cursor: pointer;
+}
+.answer:hover, .answer.active {
+    background: rgb(64, 51, 180);
+}
+.answer.correct{
+    animation: correct 3s ease forwards;
+}
+@keyframes correct {
+     0%,22%,42%{
+        background: #4421c4;
+     }
+     20%,40%,60%{
+        background: linear-gradient(#0c0133, rgb(19, 18, 18));
+     }
+     62%,100%{
+        background: green;
+     }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.answer.wrong{
+    animation: wrong 3s ease forwards;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes wrong{
+    0%,22%,42%{
+        background: #4421c4;
+    }
+    20%,40%,62%{
+        background: linear-gradient(#0c0133, rgb(19, 18, 18)) ;
+    }
+    62%,100%{
+        background: rgb(224, 6, 6);
+    }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.moneyList{
+    list-style: none;
+    width: 100%;
+    padding: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.moneyListItem{
+   display: flex;
+   align-items: center;
+   padding: 3px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.moneyListItem.active{
+   background-color: rgb(1, 78, 78);
+   padding: 5px;
+   border-radius: 5px;
 }
+.moneyListItemName{
+  font-size: 16px;
+  font-weight: 500;
+  width: 25%;
+}
+.moneyListItemAmount{
+ font-size: 20px;
+ font-weight: 500;
+}
+.timeStop{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+.start{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background:  linear-gradient(to bottom, rgba(10, 10, 10, 0), #01011f), url("./Asset/Cover.jpg") center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+.startInput{
+    width: 25%;
+    border: 2px solid #01011f;
+    border-radius: 5px;
+    height: 7%;
+    margin-bottom: 1% ;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.startButton{
+    width: 10%;
+    height: 7%;
+    border: 2px solid #01011f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 425px) {
+    .app{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 180vh;
+    }
+    .main{
+       width: 100%; 
+       height: 90vh;  
+           }
+    .money{
+        width: 100%;
+        height: 80vh;
+    }
+    .top{
+        height: 40%;
+    }
+    .timer{
+        bottom: 2rem;
+        left: 7rem;
+    }
+    .start{
+        margin: 0;
+        height: 100vh;
+    }
+    .startInput{
+        width: 70%;
+    }
+    .startButton{
+  width: 50%;
+    }
+}  
