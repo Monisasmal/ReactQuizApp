@@ -37,5 +37,31 @@ Designed to provide a smooth quiz experience with instant feedback and score tra
 <img width="1357" height="678" alt="image" src="https://github.com/user-attachments/assets/612d6496-cad0-4cae-ba7e-c7ef5f09936b" />
 <img width="1366" height="732" alt="image" src="https://github.com/user-attachments/assets/dd696ba7-1289-4aad-895e-5ec25ee6e1a9" />
 
+## 💡 Future Enhancements
+
+⏳ Timer for each question
+
+🏷️ Category-based quizzes
+
+📊 Result analytics page
+
+💾 Local storage score history
+
+🌙 Dark / light mode
+
+
+
+**🙋‍♀️ Author**
+
+## Manaswini Sasmal
+
+👩‍💻 Frontend Developer | React Enthusiast
+
+🔗 Portfolio - https://manaswini-portfolio.vercel.app/
+
+📧 manaswinisasmal5597@gmail.com
+
+🔗 LinkedIn - https://www.linkedin.com/in/manaswini-sasmal-b77a21162/
+
 
 
