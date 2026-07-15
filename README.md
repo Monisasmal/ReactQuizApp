@@ -61,9 +61,7 @@ Designed to provide a smooth quiz experience with instant feedback and score tra
 
 -----
 
-**🙋‍♀️ Author**
-
-## Manaswini Sasmal
+## 🙋‍♀️ Author - Manaswini Sasmal
 
 👩‍💻 Frontend Developer | React Enthusiast
 
